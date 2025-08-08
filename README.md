@@ -1,10 +1,25 @@
-- 👋 Hi, I’m @kristoffffff
-- 👀 I’m interested in php, java script.
-- 🌱 I’m currently learning java script.
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+# Projektregisztrációs applikáció
 
-<!---
-kristoffffff/kristoffffff is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Ez az egyszerű parancssori alkalmazás lehetővé teszi projektek rögzítését a megadott mezőkkel:
+
+- Tervezett kezdés és zárás vagy időtartam
+- Célok (bővíthető lista)
+- Stakeholderek PMI szerepkörökkel, címkékkel és dedikációval
+- Büdzsé és annak jóváhagyása
+- Kockázatok valószínűséggel és hatásterülettel
+- Feltételezések
+- Projekthez tartozó linkek
+
+## Használat
+
+```bash
+python -m project_registry.cli
+```
+
+A rögzített projektek a `projects.json` fájlban kerülnek tárolásra.
+
+## Tesztek futtatása
+
+```bash
+pytest
+```
