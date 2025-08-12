@@ -26,19 +26,13 @@ python -m project_registry.web
 
 A rögzített projektek a `projects.json` fájlban kerülnek tárolásra.
 
+
 ## Nginx konfiguráció
+A `testproject.freykristof.com.conf` fájl példa arra, hogyan tehető a Flask alkalmazás elérhetővé.
 
-A `testproject.freykristof.com.conf` fájl példát ad arra, hogyan tehető a Flask
-alkalmazás elérhetővé a `testproject.freykristof.com` domainről. Másold ezt a
-fájlt az Nginx `sites-available` könyvtárába, majd hozz létre egy szimbolikus
-linket a `sites-enabled` mappába, és töltsd újra az Nginx szolgáltatást.
+## cPanels deploy
+A gyökérkönyvtárban található `.cpanel.yml` fájl automatikusan a `/home/kimondta/public_html/...` mappába másolja a szükséges fájlokat.
 
-## cPaneles deploy
-
-A gyökérkönyvtárban található `.cpanel.yml` fájl automatikusan a
-`/home/kimondta/public_html/testproject.freykristof.com` könyvtárba másolja a
-szükséges fájlokat minden `git push` után. A célútvonal a `DEPLOYPATH`
-változóban módosítható, ha máshová szeretnéd telepíteni az alkalmazást.
 
 ## Tesztek futtatása
 
