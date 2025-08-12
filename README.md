@@ -1,6 +1,6 @@
 # Projektregisztrációs applikáció
 
-Ez az egyszerű parancssori alkalmazás lehetővé teszi projektek rögzítését a megadott mezőkkel:
+Ez az egyszerű parancssori és webes alkalmazás lehetővé teszi projektek rögzítését a megadott mezőkkel:
 
 - Tervezett kezdés és zárás vagy időtartam
 - Célok (bővíthető lista)
@@ -12,8 +12,16 @@ Ez az egyszerű parancssori alkalmazás lehetővé teszi projektek rögzítésé
 
 ## Használat
 
+CLI indítása:
+
 ```bash
 python -m project_registry.cli
+```
+
+Webes felület indítása (Flask fejlesztői szerver):
+
+```bash
+python -m project_registry.web
 ```
 
 A rögzített projektek a `projects.json` fájlban kerülnek tárolásra.

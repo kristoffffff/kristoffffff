@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <title>Új projekt</title>
+  </head>
+  <body>
+    <h1>Új projekt</h1>
+    <form method="post">
+      <label>Tervezett kezdés: <input type="date" name="start_date" required></label><br>
+      <label>Tervezett zárás: <input type="date" name="end_date"></label><br>
+      <label>Időtartam (hónap): <input type="number" name="duration_months"></label><br>
+      <label>Célok (vesszővel elválasztva): <input type="text" name="goals"></label><br>
+      <h3>Stakeholderek</h3>
+      <label>Szponzor neve: <input type="text" name="sponsor_name" required></label>
+      <label>Email: <input type="email" name="sponsor_email"></label><br>
+      <label>Projektvezető neve: <input type="text" name="manager_name" required></label>
+      <label>Email: <input type="email" name="manager_email"></label><br>
+      <label>Büdzsé: <input type="number" step="0.01" name="budget"></label><br>
+      <label>Büdzsé jóváhagyva: <input type="checkbox" name="budget_approved"></label><br>
+      <label>Feltételezések (soronként egy):<br>
+        <textarea name="assumptions"></textarea>
+      </label><br>
+      <button type="submit">Mentés</button>
+    </form>
+    <p><a href="{{ url_for('index') }}">Vissza</a></p>
+  </body>
+</html>
