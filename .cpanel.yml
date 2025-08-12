@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/kimondta/public_html/testproject.freykristof.com
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/rsync -av --exclude='.git' --exclude='tests' --exclude='*.pyc' ./ $DEPLOYPATH
