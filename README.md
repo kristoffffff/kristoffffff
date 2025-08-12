@@ -26,6 +26,14 @@ python -m project_registry.web
 
 A rögzített projektek a `projects.json` fájlban kerülnek tárolásra.
 
+
+## Nginx konfiguráció
+A `testproject.freykristof.com.conf` fájl példa arra, hogyan tehető a Flask alkalmazás elérhetővé.
+
+## cPanels deploy
+A gyökérkönyvtárban található `.cpanel.yml` fájl automatikusan a `/home/kimondta/public_html/...` mappába másolja a szükséges fájlokat.
+
+
 ## Tesztek futtatása
 
 ```bash
