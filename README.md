@@ -26,6 +26,7 @@ python -m project_registry.web
 
 A rögzített projektek a `projects.json` fájlban kerülnek tárolásra.
 
+
 ## Nginx konfiguráció
 
 A `testproject.freykristof.com.conf` fájl példát ad arra, hogyan tehető a Flask
@@ -44,6 +45,7 @@ Python‑alapú cPanel környezetben a `passenger_wsgi.py` fájl szolgál belép
 pontként a Flask alkalmazáshoz. A telepítés után ellenőrizd, hogy a cPanel
 felületén engedélyezett Python alkalmazás erre a fájlra mutat, különben a
 weboldal 403 Forbidden hibát adhat.
+
 
 ## Tesztek futtatása
 
